@@ -1,35 +1,28 @@
 <template>
   <div id="app">
     <v-app>
-      <v-navigation-drawer app permanent>
-            <v-toolbar flat>
-              <v-list>
-                <v-list-tile>
-                  <v-list-tile-title class="title">
-                    Application
-                  </v-list-tile-title>
-                </v-list-tile>
-              </v-list>
-            </v-toolbar>
-            <v-divider></v-divider>
-            <v-list dense class="pt-0">
-                <v-list-tile v-for="item in menu_items" :key="item.title" @click="">
-                  <v-list-tile-action>
-                    <v-icon>{{ item.icon }}</v-icon>
-                  </v-list-tile-action>
-                  <v-list-tile-content>
-                    <v-list-tile-title>{{ item.title }}</v-list-tile-title>
-                  </v-list-tile-content>
-                </v-list-tile>
-            </v-list>
-      </v-navigation-drawer>
-      <v-toolbar app></v-toolbar>
+      <v-toolbar app>
+        <v-toolbar-items>
+          <img src="/static/logo.png" alt="EDU.pro" class="logo" />
+        </v-toolbar-items>
+        <v-toolbar-title>EDU.pro</v-toolbar-title>
+        <v-spacer></v-spacer>
+        <v-toolbar-items class="hidden-sm-and-down">
+          <v-btn flat v-for="item in menu_items" :key="item.title">
+            <v-icon left>{{ item.icon }}</v-icon>
+            {{ item.title }}
+          </v-btn>
+        </v-toolbar-items>
+      </v-toolbar>
       <v-content>
         <v-container fluid>
           <router-view></router-view>
         </v-container>
       </v-content>
-      <v-footer app></v-footer>
+      <v-footer class="pa-3">
+        <v-spacer></v-spacer>
+        <div>&copy; {{ new Date().getFullYear() }}</div>
+      </v-footer>
     </v-app>
   </div>
 </template>
@@ -50,4 +43,9 @@
 <style>
   @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons');
   /* Global CSS */
+  .logo {
+    width: auto;
+    height: 50px;
+    margin-top: 8px;
+  }
 </style>
