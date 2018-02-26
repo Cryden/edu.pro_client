@@ -11,6 +11,11 @@ export default new Router({
       component: require('@/pages/Main').default
     },
     {
+      path: '/login',
+      name: 'login',
+      component: require('@/pages/Login').default
+    },
+    {
       path: '/inspire',
       name: 'inspire',
       component: require('@/components/InspireView').default
