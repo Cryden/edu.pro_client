@@ -3,7 +3,7 @@
     <v-app>
       <v-toolbar app dark class="nav_grey" height="70px">
         <v-toolbar-items>
-          <img src="/static/images/logo.png" alt="edu.pro" class="logo" />
+          <img src="static/images/logo.png" alt="edu.pro" class="logo" />
         </v-toolbar-items>
         <v-toolbar-title>
             <span class="name_first">edu.</span><span class="name_last">pro</span>

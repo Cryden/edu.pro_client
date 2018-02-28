@@ -1,6 +1,6 @@
 {
   "name": "eduproclient",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "CRYDEsigN <Cryden_da@mail.ru>",
   "description": "An electron-vue project",
   "license": "MIT",
@@ -14,7 +14,8 @@
     "pack": "npm run pack:main && npm run pack:renderer",
     "pack:main": "cross-env NODE_ENV=production webpack --progress --colors --config .electron-vue/webpack.main.config.js",
     "pack:renderer": "cross-env NODE_ENV=production webpack --progress --colors --config .electron-vue/webpack.renderer.config.js",
-    "postinstall": ""
+    "postinstall": "",
+    "rebuild": "electron-rebuild -f -w edu.pro_client"
   },
   "build": {
     "productName": "eduproclient",
@@ -52,8 +53,8 @@
   },
   "dependencies": {
     "axios": "^0.16.1",
+    "electron-sqlite3": "0.0.3",
     "knex": "^0.14.4",
-    "sqlite3": "^3.1.13",
     "vue": "^2.4.2",
     "vue-electron": "^1.0.6",
     "vue-router": "^2.5.3",
@@ -76,9 +77,10 @@
     "del": "^3.0.0",
     "devtron": "^1.4.0",
     "electron": "^1.7.5",
+    "electron-builder": "^19.19.1",
     "electron-debug": "^1.4.0",
     "electron-devtools-installer": "^2.2.0",
-    "electron-builder": "^19.19.1",
+    "electron-rebuild": "^1.7.3",
     "extract-text-webpack-plugin": "^3.0.0",
     "file-loader": "^0.11.2",
     "html-webpack-plugin": "^2.30.1",
