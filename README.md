@@ -2,7 +2,7 @@
 
 > An electron-vue project
 
-[![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/Cryden/my-stack)
+[![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/Cryden/edu-pro-client)
 
 #### Build Setup
 
