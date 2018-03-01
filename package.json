@@ -14,12 +14,11 @@
     "pack": "npm run pack:main && npm run pack:renderer",
     "pack:main": "cross-env NODE_ENV=production webpack --progress --colors --config .electron-vue/webpack.main.config.js",
     "pack:renderer": "cross-env NODE_ENV=production webpack --progress --colors --config .electron-vue/webpack.renderer.config.js",
-    "postinstall": "",
-    "rebuild": "electron-rebuild -f -w edu.pro_client"
+    "postinstall": ""
   },
   "build": {
-    "productName": "eduproclient",
-    "appId": "org.simulatedgreg.electron-vue",
+    "productName": "edu.pro client",
+    "appId": "edu.pro",
     "directories": {
       "output": "build"
     },
@@ -69,7 +68,6 @@
     "babel-preset-stage-0": "^6.24.1",
     "babel-register": "^6.24.1",
     "babili-webpack-plugin": "^0.1.2",
-    "cfonts": "^1.1.3",
     "chalk": "^2.1.0",
     "copy-webpack-plugin": "^4.0.1",
     "cross-env": "^5.0.5",
@@ -80,7 +78,6 @@
     "electron-builder": "^19.19.1",
     "electron-debug": "^1.4.0",
     "electron-devtools-installer": "^2.2.0",
-    "electron-rebuild": "^1.7.3",
     "extract-text-webpack-plugin": "^3.0.0",
     "file-loader": "^0.11.2",
     "html-webpack-plugin": "^2.30.1",
