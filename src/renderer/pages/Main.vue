@@ -17,7 +17,7 @@
       </v-container>
     </v-jumbotron> 
     <v-container fluid>
-      lorem
+      <a href="http://localhost:3000/test">lorem</a>
     </v-container>
   </div>
 </template>

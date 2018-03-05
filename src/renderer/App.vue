@@ -9,7 +9,7 @@
             <span class="name_first">edu.</span><span class="name_last">pro</span>
         </v-toolbar-title>
         <v-spacer></v-spacer>
-          <v-btn icon>
+          <v-btn icon >
             <v-icon dark>search</v-icon>
           </v-btn>
           <v-btn icon to="/Login">

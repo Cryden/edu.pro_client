@@ -52,9 +52,12 @@
   },
   "dependencies": {
     "axios": "^0.16.1",
-    "sqlite3": "^3.1.13",
+    "crypto": "^1.0.1",
     "electron-sqlite3": "0.0.3",
+    "express": "^4.16.2",
     "knex": "^0.14.4",
+    "passport": "^0.4.0",
+    "sqlite3": "^3.1.13",
     "vue": "^2.4.2",
     "vue-electron": "^1.0.6",
     "vue-router": "^2.5.3",
